@@ -1,0 +1,38 @@
+html
+	head
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(href="/css/materialize.min.css" type="text/css" rel ="stylesheet")
+		link(href="/custom.css" type="text/css" rel ="stylesheet")
+	body
+
+		div(class="header")
+
+		div(class="row")
+			div(class="col s12" id="rest")
+				nav(class="z-depth-0 white")
+					div.nav-wrapper
+						ul.right
+							li
+								a(class="black-text text-darken-2-1" href='/index') x Home
+								a(class="black-text text-darken-2-2" href='/msgpage') x Check the jokes
+
+				p(id="bigone") Here comes the fun!				
+
+
+				each thing in bitch
+
+						span.thing #{thing.title} 
+						<br>
+						span.thing2 #{thing.body}
+						<br>
+						<br>
+
+
+
+
+
+
+
+		script(src="/jquery-3.1.1.min.js")
+		script(src="js/materialize.min.js")
+		script(src="custom.js")

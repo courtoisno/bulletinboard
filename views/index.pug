@@ -1,0 +1,41 @@
+html
+	head
+		title="Bulletin board magic app"
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(href="/css/materialize.min.css" type="text/css" rel ="stylesheet")
+		link(href="/custom.css" type="text/css" rel ="stylesheet")
+
+	body
+		div(class="row")
+
+			div(class="col s12")
+				nav(class="z-depth-0 white")
+					div.nav-wrapper
+						ul.right
+							li
+								a(class="black-text text-darken-2-1" href='/index') ☺ Home
+							li
+								a(class="black-text text-darken-2-2" href='/msgpage') ☺ Check the jokes
+
+			div(class="col s6" id="left2")
+				div(class="left")
+
+
+					p(class="text1") HELLO! What's the weirdest thing you've ever done? Post it, share it. Let's be weird together.
+
+			div(class="col s6" id="right")
+
+				form(method="POST" action="/index")
+
+					p(class="title") Title:<br>
+						input( name="title" type="text")
+					p(class="title") Message: <br>
+						textarea(id="textarea1" class="materialize-textarea" name="message" ) Enter text here...
+					p 
+						input(type="submit" value="submit" id="call_back_btn")
+	
+		script(src="/jquery-3.1.1.min.js")
+		script(src="js/materialize.min.js")
+		script(src="custom.js")
+	
+
